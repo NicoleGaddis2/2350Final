@@ -1,0 +1,65 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    margin: 1rem;
+}
+ a{
+    text-decoration: none;
+    color:black;
+}
+img{
+    max-height: 200px;
+    max-width: 175px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    
+    max-width: 375px;
+    height: fit-content;
+    border:none;
+    
+}
+div .card{
+    display:grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+
+#more{
+    display: none;
+}
+#fox-list{
+    display: none;
+}
+#soc-more{
+    display: none;
+}
+#soc-list{
+    display: none;
+}
+#hbad-more{
+    display: none;
+}
+#hbad-list{
+    display: none;
+}
+#rwrb-more{
+    display: none;
+}
+#nEvils-more{
+    display: none;
+}
+#nEvils-list{
+    display: none;
+}
+
+.btn{
+    background-color: gainsboro;
+    border:none;
+    padding:.5em;
+    background-color: rgb(169, 166, 166);
+}

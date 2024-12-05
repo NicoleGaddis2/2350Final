@@ -16,32 +16,38 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <header>
+        <header class="mt-4 p-5 bg-secondary text-white rounded text-center" >
+            <h1>Book Shelf</h1>
+            <h3>Home Page</h3>
             <!-- place navbar here -->
+
         </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="page1.html">Stand Alones</a></li>
-                <li><a href="page2.html">Series</a></li>
-                <li><a href="page3.html">Sequence Series</a></li>
+        <nav class="p-2 sticky-top bg-secondary-subtle navbar-light">
+            <ul class="nav nav-tabs">
+                <li class="nav-item "><a class="nav-link active text-black" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page1.html">Stand Alones</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page2.html">Series</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page3.html">Sequence Series</a></li>
             </ul>
         </nav>
-        <main>
-            <h1>Website Description</h1>
+        <main class="p-3">
+            <h2>Website Description</h2>
             <p>As an avid reader I am always searching for new books, but I am a mood reader. I can only enjoy certain books when I am in the right mood, thus I tend to have very specific preferances. This website is meant to make it a bit easier for other mood readers to find books tthat suit their current mood easier.</p>
-            <h3>Disclaimer: I will have ratings on the books I have recommended but they are personal ratings, you might not agree so keep that in mind when looking through my website.</h3>
-
-            <table>
-                <th>
-                    <td>Title</td>
-                    <td>Author</td>
-                    <td>Type</td>
-                    <td>Rating</td>
-                </th>
+            <h6 > Disclaimer: I will have ratings on the books I have recommended but they are personal ratings, you might not agree so keep that in mind when looking through my website.</h6>
+<div class="p-3 ">
+            <table class="table table-hover ">
+                <thead class="table-success">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Type</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
                 <tr>
                     <td>All for the Game</td>
                     <td>Nora Sakavic</td>
@@ -73,33 +79,55 @@
                     <td>6</td>
                 </tr>
             </table>
+        </div>
             <h1>Recommendations</h1>
             <p>If you have a book you think others would enjoy &lpar;or one to avoid&lpar; fill out the form below, the site will update to show your recommendation temporarily and will be researched and offically added within a week</p>
             <form>
-                <div>
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title"><br>
+                <div class="form-floating mb-1 mt-1">
+                    
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Book Title">
+                    <label for="title">Title</label><br>
                 </div>
-                <div>
+                <div class="form-floating mb-1 mt-1">
+                    
+                    <input type="text" name="auhtor" id="author"class="form-control" placeholder="Author ">
                     <label for="author">Author</label>
-                    <input type="text" name="auhtor" id="author"><br>
+                    <br>
                 </div>
-                <div>
-                    <label for="type">Type</label><br>
-                    <input type="radio" id="alone" name="type" value="alone">
-                    <label for="alone">Stand Alone</label><br>
-                    <input type="radio" id="series" name="type" value="series">
-                    <label for="series">Series</label><br>
-                    <input type="radio" id="Sequence" name="type" value="sequence">
-                    <label for="sequence">Sequnce Series</label>
+                <div class="form-check m-3">
+                    <label for="type" >Type:</label><br> 
+
+                    <input type="radio" id="alone" name="type" value="alone" class="form-check-input">
+                    <label for="alone" class="form-check-label">Stand Alone</label><br>
+
+                    <input type="radio" id="series" name="type" value="series" class="form-check-input">
+                    <label for="series" class="form-check-label">Series</label><br>
+
+                    <input type="radio" id="Sequence" name="type" value="sequence" class="form-check-input">
+                    <label for="sequence" class="form-check-label">Sequnce Series</label>
+                    
                 </div>
                 <div>
                     <label for="rate">Rating</label>
-                    <input type="number" name="rate" id="rate">
+                    <input type="range" name="rate" id="rate" class="slider"  step="1" value="5" list="marks">
+                    <datalist id="marks">
+                        <option value="0">0</option>
+                        <option value="10">1</option>
+                        <option value="20">2</option>
+                        <option value="30">3</option>
+                        <option value="40">4</option>
+                        <option value="50">5</option>
+                        <option value="60">6</option>
+                        <option value="70">7</option>
+                        <option value="80">8</option>
+                        <option value="90">9</option>
+                        <option value="100">10</option>
+                      </datalist>
+                    
                 </div>
             </form>
         </main>
-        <footer>
+        <footer class="mt-1 p-2 bg-secondary text-white text-center">
             <!-- place footer here -->
             <p> &copy;Nicole Gaddis Weber State University</p>
         </footer>
@@ -107,7 +135,7 @@
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
+            crossorigin="anonymous" 
         ></script>
 
         <script

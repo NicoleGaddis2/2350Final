@@ -16,91 +16,117 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="JQ/page2JQ.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <header class="mt-4 p-5 bg-secondary text-white rounded text-center">
             <!-- place navbar here -->
+            <h1>Book Shelf</h1>
+            <h3>Series</h3>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page1.html">Stand Alones</a></li>
-                <li><a href="#"></a>Series</li>
-                <li><a href="page3.html">Sequence Series</a></li>
+        <nav class="p-2 sticky-top bg-secondary-subtle ">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page1.html">Stand Alones</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Series</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page3.html">Sequence Series</a></li>
             </ul>
         </nav>
         <main>
             <h1>Description</h1>
             <p>Books that have at least one other book with the same character's perspective and story. They usually have an over-reaching plot, not always, a diclaimer will be added if that is the case. The first book will be the one shown, if you want the others in the series look in the details.</p>
+
+
+            <div class="row">
+                <div class="col-sm-4">
             <div class="card">
                 <div class= "card-body">
                     <img class="card-img-top" src="img/AFTG.jpg" alt="Card image">
-                    <h4 class="card-title">Foxhole Court</h4>
-                    <p class="card-text">Neil Josten is the newest addition to the Palmetto State University Exy team. He's short, he's fast, he's got a ton of potential—and he's the runaway son of the murderous crime lord known as The Butcher.</p>
-                        <p class="card-text">
-
-                        Signing a contract with the PSU Foxes is the last thing a guy like Neil should do. The team is high profile and he doesn't need sports crews broadcasting pictures of his face around the nation. His lies will hold up only so long under this kind of scrutiny and the truth will get him killed.</p>
-                        <p class="card-text">
+                    <h4 class="card-title text-center">Foxhole Court</h4>
+                    <p class="card-text">Neil Josten is the newest addition to the Palmetto State University Exy team. He's short, he's fast, he's got a ton of potential—and he's the runaway son of the murderous crime lord known as The Butcher.  </p>
+                        <p class="card-text" >
+                            
+                        Signing a contract with the PSU Foxes is the<span id="fox-dots">...</span> <span id="more">last thing a guy like Neil should do. The team is high profile and he doesn't need sports crews broadcasting pictures of his face around the nation. His lies will hold up only so long under this kind of scrutiny and the truth will get him killed.</span></p>
+                        <p class="card-text" id="more">
+                        
                         But Neil's not the only one with secrets on the team. One of Neil's new teammates is a friend from his old life, and Neil can't walk away from him a second time. Neil has survived the last eight years by running. Maybe he's finally found someone and something worth fighting for.</p>
-                        <ol class="card-text">
-                            <li>
+                        <ol class="card-text" id="fox-list">
+                            <li class="text-muted">
                                 Foxhole Court
                             </li>
                             <li>
                                 Raven King
                             </li>
                             <li>
-                                King&comma;s Men
+                                King&apos;s Men
                             </li>
-                            
-                            
                         </ol>
-                    <button type="button" class="btn">Show More</button>
+                    <button type="button" class="btn" id="fox">Show More</button>
                 </div>
             </div>
-
+                </div>
+<div class="col-sm-4">
             <div class="card">
                 <div class= "card-body">
                     <img class="card-img-top" src="img/Half.jpg" alt="Card image">
-                    <h4 class="card-title">Half Bad</h4>
-                    <p class="card-text">In a modern-day England where two warring factions of witches live alongside humans, one sixteen-year-old boy is trapped between the two sides. Nathan's father is the world&comma;s most powerful and cruel witch, and his mother is dead. Both groups of witches see Nathan as their greatest threat—or their greatest weapon. Trapped in a cage, beaten and handcuffed, he must escape before his seventeenth birthday, at which point he will receive three gifts from his father and come into his own as a witch—or else he will die. But how can Nathan find his father when his every action is tracked, when there is no one safe to trust, not even family, not even the girl he loves?</p>
-                    <button type="button" class="btn">Show More</button>
+                    <h4 class="card-title text-center">Half Bad</h4>
+                    <p class="card-text" >In a modern-day England where two warring factions of witches live alongside humans, one sixteen-year-old boy is trapped between the two sides. Nathan's father is the world&apos;s most powerful and cruel witch, and his mother is dead. Both groups of witches see Nathan as their <span id="hbad-dots">...</span> <span id="hbad-more">greatest threat—or their greatest weapon. Trapped in a cage, beaten and handcuffed, he must escape before his seventeenth birthday, at which point he will receive three gifts from his father and come into his own as a witch—or else he will die. But how can Nathan find his father when his every action is tracked, when there is no one safe to trust, not even family, not even the girl he loves?</span></p>
+                    <ol class="card-text" id="hbad-list">
+                        <li class="text-muted">Half Bad</li>
+                        <li>Half wild</li>
+                        <li>Half Lost</li>
+                    </ol>
+                    <button type="button" class="btn" id="half-bad">Show More</button>
                 </div>
             </div>
-
+            </div>
+            <div class="col-sm-4">
             <div class="card">
                 <div class= "card-body">
                     <img class="card-img-top" src="img/SoC.jpg" alt="Card image">
-                    <h4 class="card-title">Six of Crows</h4>
-                    <p class="card-text">Ketterdam: a bustling hub of international trade where anything can be had for the right price—and no one knows that better than criminal prodigy Kaz Brekker. Kaz is offered a chance at a deadly heist that could make him rich beyond his wildest dreams. But he can&comma;t pull it off alone...
+                    <h4 class="card-title text-center">Six of Crows</h4>
+                    <p class="card-text">Ketterdam: a bustling hub of international trade where anything can be had for the right price—and no one knows that better than criminal prodigy Kaz Brekker. Kaz is offered a chance at a deadly heist that could make him rich beyond his wildest dreams. But he can&apos;t pull it off alone...
                     </p>
-                        <p class="card-text">
+                    <div id="soc-more">
+                        <p class="card-text" >
                         A convict with a thirst for revenge</p>
-                        <p class="card-text">
-                        A sharpshooter who can&comma;t walk away from a wager
+                        <p class="card-text" >
+                        A sharpshooter who can&apos;t walk away from a wager
                         </p>
-                        <p class="card-text">
+                        <p class="card-text" >
                         A runaway with a privileged past
                         </p>
-                        <p class="card-text">
+                        <p class="card-text" >
                         A spy known as the Wraith
                         </p>
-                        <p class="card-text">
+                        <p class="card-text" >
                         A Heartrender using her magic to survive the slums
                         </p>
-                        <p class="card-text">
+                        <p class="card-text" >
                         A thief with a gift for unlikely escapes
                         </p>
-                        <p class="card-text">
-                        Six dangerous outcasts. One impossible heist. Kaz&comma;s crew is the only thing that might stand between the world and destruction—if they don&comma;t kill each other first.</p>
-                    <button type="button" class="btn">Show More</button>
+                        <p class="card-text" >
+                        Six dangerous outcasts. One impossible heist. Kaz&apos;s crew is the only thing that might stand between the world and destruction—if they don&apos;t kill each other first.</p> </div>
+                        <ol class="card-text" id="soc-list">
+                            <li class="text-muted">
+                                Six of Crows
+                            </li>
+                            <li>
+                                Crooked Kingdom
+                            </li>
+                        </ol>
+                    <button type="button" class="btn" id="soc">Show More</button>
                 </div>
             </div>
-
+            </div>
+            </div>
             
         </main>
-        <footer>
+        <footer class="mt-1 p-2 bg-secondary text-white text-center">
             <p> &copy;Nicole Gaddis Weber State University</p>
             <!-- place footer here -->
         </footer>

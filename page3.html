@@ -16,46 +16,57 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="JQ/page3JQ.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <header class="mt-4 p-5 bg-secondary text-white rounded text-center">
             <!-- place navbar here -->
+            <h1>Book Shelf</h1>
+            <h3>Squence Series</h3>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page1.html">Stand Alones</a></li>
-                <li><a href="page2.html">Series</a></li>
-                <li><a href="#"></a> Sequence Series</li>
+        <nav class="p-2 sticky-top bg-secondary-subtle ">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page1.html">Stand Alones</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page2.html">Series</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Sequence Series</a></li>
             </ul>
         </nav>
         <main>
             <h1>Description</h1>
             <p> This page is for book series where each book follows the perspective and story of a different charcacter that is in the same universe as the other books in the series. Some sequence series the books can be read as stand alones, others have an over reaching plot similar to a regular series.The first book will be the one shown, if you want the others in the series look in the details.</p>
             
-
+            <div class="row">
+                <div class="col-sm-4">
             <div class="card">
                 <div class= "card-body">
-                    <img class="card-img-top" src="img/Evils.jpg" alt="Card image">
-                    <h4 class="card-title">Unhinged</h4>
-                    <p class="card-text">Adam Mulvaney lives a double life. By day, he&comma;s the spoiled youngest son of an eccentric billionaire. By night, he&comma;s an unrepentant killer, one of seven psychopaths raised to right the wrongs of a justice system that keeps failing.
+                    <img class="card-img-top" src="img/Evils.jpg" alt="Card image" id="nEvils-img">
+                    <h4 class="card-title text-center">Unhinged</h4>
+                    <p class="card-text">Adam Mulvaney lives a double life. By day, he&apos;s the spoiled youngest son of an eccentric billionaire. By night, he&apos;s an unrepentant killer, one of seven psychopaths raised to right the wrongs of a justice system that keeps failing.
                     </p>
-                    <p class="card-text">
-                        Noah Holt has spent years dreaming of vengeance for the death of his father, but when faced with his killer, he learns a daunting truth he can&comma;t escape. His father was a monster.
+                    <p class="card-text" >
+                        Noah Holt has spent years dreaming of vengeance for the death of his father, but when faced with his killer, he learns a daunting truth <span id="nEvils-dots">...</span> <span id="nEvils-more">
+                        he can&apos;t escape. His father was a monster.
                         
-                    </p>
-                    <p class="card-text">
+                        <br><br>
                         Unable to ignore his own surfacing memories, Noah embarks on a quest to find the truth about his childhood with the help of an unlikely ally: the very person who murdered his father. Since their confrontation, Adam is obsessed with Noah, and he wants to help him uncover the answers he seeks, however dark they may be.
                         
-                    </p>
-                    <p class="card-text">
-                        The two share a mutual attraction, but deep down, Noah knows Adam&comma;s not like other boys. Adam can&comma;t love. He wasn&comma;t born that way. But he refuses to let Noah go, and Noah&comma;s not sure he wants him to.
+                    <br><br>
+                        The two share a mutual attraction, but deep down, Noah knows Adam&apos;s not like other boys. Adam can&apos;t love. He wasn&apos;t born that way. But he refuses to let Noah go, and Noah&apos;s not sure he wants him to.
                         
-                    </p>
-                    <p class="card-text">
-                        Can Adam prove to Noah that passion, power, and protection are just as good as love?</p>
-                        <ol class="card-text">
+                        <br><br>
+                        Can Adam prove to Noah that passion, power, and protection are just as good as love?<br><br>
+                        
+                        </p>
+                        
+                        <ol class="card-text" id="nEvils-list"  >
+                            <li class="text-muted">
+                                Unhinged
+                            </li>
                             <li>
                                 Psyhco
                             </li>
@@ -75,11 +86,13 @@
                                 Lunatic
                             </li>
                         </ol>
-                    <button type="button" class="btn">Show More</button>
+                    </span>
+                    <button type="button" class="btn" id="nEvils-btn">Show More</button>
                 </div>
             </div>
+            </div>
         </main>
-        <footer>
+        <footer class="mt-1 p-2 bg-secondary text-white text-center">
             <p> &copy;Nicole Gaddis Weber State University</p>
             <!-- place footer here -->
         </footer>

@@ -16,38 +16,46 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script src="JQ/page1JQ.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <header class="mt-4 p-5 bg-secondary text-white rounded text-center">
             
              <h1>Book Shelf</h1>
+             <h3>Stand Alones</h3>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page1.html">Stand Alones</a></li>
-                <li><a href="page2.html">Series</a></li>
-                <li><a href="page3.html">Sequence Series</a></li>
+        <nav class="p-2 sticky-top bg-secondary-subtle ">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link text-black" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Stand Alones</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page2.html">Series</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="page3.html">Sequence Series</a></li>
             </ul>
-        </nav>
+        </nav >
         <main>
             <h1>Description</h1>
             <p>Any book that can be read on it's own, no need to read a book before or after, some recommendations that blur lines may be added to more than one page but disclaimers will be present.
                 &lpar;Book Summaries will be from goodreads
             </p>
-
+            <div class="row">
+                <div class="col-sm-4">
             <div class="card">
                 <div class= "card-body">
                     <img class="card-img-top" src="img/rwrb.jpg" alt="Card image">
-                    <h4 class="card-title">Red, White and Royal Blue</h4>
+                    <h4 class="card-title text-center">Red, White and Royal Blue</h4>
                     <p class="card-text">
-                    First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep&comma;s genius granddaughter, they&comma;re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen Claremont. International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations. The plan for damage control: staging a fake friendship between the First Son and the Prince.
+                    First Son Alex Claremont-Diaz is the closest thing to a prince this side of the Atlantic. With his intrepid sister and the Veep&apos;s genius granddaughter, they&apos;re the White House Trio, a beautiful millennial marketing strategy for his mother, President Ellen <span id="rwrb-dots">...</span><span id="rwrb-more">Claremont.  International socialite duties do have downsides—namely, when photos of a confrontation with his longtime nemesis Prince Henry at a royal wedding leak to the tabloids and threaten American/British relations. The plan for damage control: staging a fake friendship between the First Son and the Prince.
+                    </span>
                 </p>
-                    <p class="card-text">
-As President Claremont kicks off her reelection bid, Alex finds himself hurtling into a secret relationship with Henry that could derail the campaign and upend two nations. What is worth the sacrifice? How do you do all the good you can do? And, most importantly, how will history remember you?</p>
-                    <button type="button" class="btn">Show More</button>
+                    <p class="card-text"> <span id="rwrb-more">As President Claremont kicks off her reelection bid, Alex finds himself hurtling into a secret relationship with Henry that could derail the campaign and upend two nations. What is worth the sacrifice? How do you do all the good you can do? And, most importantly, how will history remember you? </span></p>
+                    <button type="button" class="btn" id="rwrb-btn">Show More</button>
                 </div>
+            </div>
+            </div>
             </div>
 
             
@@ -55,7 +63,7 @@ As President Claremont kicks off her reelection bid, Alex finds himself hurtling
 
 
         </main>
-        <footer>
+        <footer class="mt-1 p-2 bg-secondary text-white text-center">
             <!-- place footer here -->
             <p> &copy;Nicole Gaddis Weber State University</p>
         </footer>
