@@ -29,33 +29,9 @@ div .card{
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
 
-#more{
-    display: none;
-}
-#fox-list{
-    display: none;
-}
-#soc-more{
-    display: none;
-}
-#soc-list{
-    display: none;
-}
-#hbad-more{
-    display: none;
-}
-#hbad-list{
-    display: none;
-}
-#rwrb-more{
-    display: none;
-}
-#nEvils-more{
-    display: none;
-}
-#nEvils-list{
-    display: none;
-}
+
+
+
 
 .btn{
     background-color: gainsboro;

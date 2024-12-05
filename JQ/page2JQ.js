@@ -31,10 +31,10 @@ $(document).ready(function(){
             $("#soc-list").slideToggle();
             if ($('#soc').text() == "Show More") {
             $(this).text("Show Less")
-            $("#hbd-dots").hide();
+            $("#soc-dots").hide();
             } else {
             $(this).text("Show More")
-            $("#hbd-dots").show();
+            $("#soc-dots").show();
             }
             });           
 });
