@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    
-      
+$(document).ready(function(){ 
     $("#fox").click(function( ) {
         
         $("#more").slideToggle();

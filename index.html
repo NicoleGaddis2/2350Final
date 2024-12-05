@@ -17,6 +17,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="css/styles.css">
+        <script  src="script.js" defer></script>
     </head>
 
     <body>
@@ -36,7 +37,7 @@
         </nav>
         <main class="p-3">
             <h2>Website Description</h2>
-            <p>As an avid reader I am always searching for new books, but I am a mood reader. I can only enjoy certain books when I am in the right mood, thus I tend to have very specific preferances. This website is meant to make it a bit easier for other mood readers to find books tthat suit their current mood easier.</p>
+            <p>As an avid reader I am always searching for new books, but I am a mood reader. I can only enjoy certain books when I am in the right mood, thus I tend to have very specific preferances. This website is meant to make it a bit easier for others find books that suit their current mood easier.</p>
             <h6 > Disclaimer: I will have ratings on the books I have recommended but they are personal ratings, you might not agree so keep that in mind when looking through my website.</h6>
 <div class="p-3 ">
             <table class="table table-hover ">
@@ -108,21 +109,8 @@
                     
                 </div>
                 <div>
-                    <label for="rate">Rating</label>
-                    <input type="range" name="rate" id="rate" class="slider"  step="1" value="5" list="marks">
-                    <datalist id="marks">
-                        <option value="0">0</option>
-                        <option value="10">1</option>
-                        <option value="20">2</option>
-                        <option value="30">3</option>
-                        <option value="40">4</option>
-                        <option value="50">5</option>
-                        <option value="60">6</option>
-                        <option value="70">7</option>
-                        <option value="80">8</option>
-                        <option value="90">9</option>
-                        <option value="100">10</option>
-                      </datalist>
+                    <label for="rating">Rating</label>
+                    <input type="number" name="rating" id="rating" class="form-control"><br>
                     
                 </div>
                 <div>
